@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PharmaCare</title>
+</head>
+<body class="font-sans bg-gray-900 text-white">
+  <nav class="border-b border-gray-800">
+    <div class="container mx-auto flex items-center justify-between px-4 py-6">
+      <ul class="flex items-center">
+        <li>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+
+          </a>
+
+        </li>
+        <li class="ml-2">
+          <a href="#" class="hover:text-gray-300">
+           <h3 class="font-semibold">PharmaCare</h3>
+          </a>
+        </li>
+        <li class="ml-16">
+          <a routerLink="/drugs" class="hover:text-gray-300">Home</a>
+        </li>
+        <li class="ml-16">
+          <a routerLink="/drugs" class="hover:text-gray-300">Drugs</a>
+        </li>
+        <li class="ml-16">
+          <a routerLink="drugs/add" class="hover:text-gray-300">Add Drug</a>
+        </li>
+      </ul>
+      <div class="flex item-center">
+        <div class="relative ml-16">
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" routerLink="/signup">Sign Up
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="relative ml-16">
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" routerLink="/login">Login
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="relative ml-16">
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" (click)="logout()">Log Out
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+<router-outlet></router-outlet>
